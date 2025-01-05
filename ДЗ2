@@ -113,3 +113,105 @@ int main()
   return 0;
 }
 
+7. #include <iostream>
+   using namespace std;
+  
+int main()
+{
+    int a, b;
+    cin>>a>>b;
+    int temp;
+    if (a>b) 
+    {
+        temp = b; b=a; a= temp;
+        
+    }
+    cout << "ves' diapozon" << endl;
+    for (int i = a; i<=b; i++)
+    { 
+        cout<< i<<" ";
+    }
+    cout<<endl;
+    cout<< "chetnye"<<endl;
+    for (int i = a; i<=b; i++)
+    { 
+        if ( (i%2)==0) 
+        cout<< i << " "; 
+        
+    }
+    cout << endl;
+    cout << "ne chetnye"<< endl;
+    for (int i = a; i<=b; i++)
+    { 
+        if ( (i % 2) !=0)
+        cout << i << " ";
+    }
+    cout << endl;
+    cout<< "kratny 7" << endl;
+    for (int i = a; i<=b; i++) 
+    { 
+        if( (i % 7) ==0) 
+        cout << i << " ";
+    }
+    system("pause"); 
+    return 0;
+  
+}
+
+
+8. #include <iostream>
+   using namespace std;
+  
+int main()
+{
+    setlocale (LC_ALL, "RU");
+    int n, v, x, y,z;
+    cout << "Введите сначала нижнюю и верхнюю границу диапазона через пробел- ";
+    cin >> n >> v;
+    if (n > v) {
+      y = n;
+      x = v;
+    }
+   else 
+   {
+   x = n;
+   y = v;
+   }
+   z = 0;
+   for (int i = x; i <= y; i++) {
+
+	z = z + i;
+	
+  }
+   cout << "Сумма диапазона равна  _  " << z;
+   cout << endl;
+  system("pause");
+    return 0;
+  
+}
+
+
+
+9.#include <iostream>
+   using namespace std;
+  
+int main()
+{
+    setlocale (LC_ALL, "RU");
+    int x=1, z = 0;
+   cout << "Вводите значения которые нужно сложить, для сложения введите ноль\n";
+   while (x != 0) 
+   {
+   cin >> x;
+   z = z + x;
+   }
+  cout << "\nСумма чисел равна _ " << z;
+  cout << endl;
+   system("pause");
+    return 0;
+  
+}
+
+
+
+
